@@ -19,6 +19,12 @@
   <body>
     <%= render 'partials/header' %>
     <div class="container">
+      <br/>
+
+      <% if notice %>
+        <%= render 'partials/alert' %>
+      <% end %>
+
       <%= yield %>
     </div>
 
